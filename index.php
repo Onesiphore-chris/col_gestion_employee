@@ -22,17 +22,17 @@
     <a href="index.html" class="logo">COL <span>Entreprise</span></a>
 
     <div class="navbar">
-        <a href="about.html">A propos</a>
-        <a href="pannier.html">Contactez</a>
+        <a href="">A propos</a>
+        <a href="">Contactez</a>
     </div>    
  </header>
  <div class="navbar2">
-    <a href="about.html">A propos</a>
+    <a href="">A propos</a>
 
    <div class="bloc1">
 
-    <a href="about.html">A propos</a>
-    <a href="pannier.html">Contactez</a>
+    <a href="">A propos</a>
+    <a href="">Contactez</a>
    </div>
 </div>
 
@@ -50,11 +50,11 @@
 <section class="login-user">
 
         <div class="user-admin">
-            <a href="employee/login.html"><i class="fa-solid fa-users"></i></a>
+            <a href="employee/login.php"><i class="fa-solid fa-users"></i></a>
            
         </div>
         <div class="user-admin">
-            <a href="admin/login.html"> <i class="fa-solid fa-screwdriver-wrench"></i></a>
+            <a href="admin/login.php"> <i class="fa-solid fa-screwdriver-wrench"></i></a>
         </div>
     
 </section>
@@ -82,8 +82,8 @@ align-items: center;
 justify-content: space-between;">
     <a href="index.html" class="logo"><i class="fa-solid fa-starship"><span> <b>COl</b> Entreprise</span> </i></a>
     <div class="navbar2">
-        <a href="about.html">A propos</a>
-        <a href="pannier.html">pannier</a>
+        <a href="">A propos</a>
+        <a href="">pannier</a>
         
     </div>
     <div class="share-2">

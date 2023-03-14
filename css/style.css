@@ -132,15 +132,15 @@ section{
 .login-user .user-admin{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     margin: 0 10px;
     background: var(--main); 
-    width: 50rem;
-    height: 30rem;
+    width: 40rem;
+    height: 25rem;
 }
 .login-user .user-admin i{
     color: var(--white);
-    font-size: 10rem;
+    font-size: 15rem;
     text-align: center;
     display: block;
     align-items: center;
