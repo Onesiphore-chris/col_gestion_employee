@@ -249,8 +249,50 @@
                         <h2>Employee Ajouter Recemment</h2>
                         <div class="item online">
                                 <div class="icon">
-                                    
+                                <i class="fa-solid fa-plus"></i>
                                 </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h3>Personne online</h3>
+                                        <small class="text-muted">Pendant 24 Heures</small>
+                                    </div>
+                                    <h5 class="success">+</h5>
+                                    <h3>status</h3>
+                                </div>
+                        </div>
+
+                        <div class="item online">
+                                <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h3>Personne online</h3>
+                                        <small class="text-muted">Pendant 24 Heures</small>
+                                    </div>
+                                    <h5 class="success">+</h5>
+                                    <h3>status</h3>
+                                </div>
+                        </div>
+
+                        <div class="item online">
+                                <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h3>Personne online</h3>
+                                        <small class="text-muted">Pendant 24 Heures</small>
+                                    </div>
+                                    <h5 class="success">+</h5>
+                                    <h3>status</h3>
+                                </div>
+                        </div>
+                        <div class="item add-product">
+                            <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <h3></h3>
+                            </div>
                         </div>
                     </div>
 
