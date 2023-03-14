@@ -113,7 +113,6 @@ b{
 }
 aside{
     height: 100vh;
-    background: #111e88;
 }
 aside .top{
     background: var(--color-white);
@@ -125,6 +124,10 @@ aside .top{
 aside .top .logo{
     display: flex;
     gap: 0.8rem;
+}
+aside .logo{
+    display: flex;
+    gap: 2rem;
 }
 aside .top img{
     width: 2rem;
