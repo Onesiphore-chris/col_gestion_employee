@@ -13,6 +13,9 @@
 
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
     <!-- cusom css link  -->
     <link rel="stylesheet" href="css/style.css">
 <body>
@@ -47,19 +50,19 @@
                             <span class="message-count">26</span>
                         </a>
                         <a href="">
-                        <i class="fa-duotone fa-chart-simple"></i>
+                        <i class="fa-sharp fa-solid fa-magnifying-glass-chart"></i>
                             <h2>Rapports</h2>
                         </a>
                         <a href="">
-                        <i class="fa-regular fa-gear"></i>
-                            <h2>Parrametre</h2>
+                        <i class="fa-solid fa-wrench"></i>
+                            <h2>Parametre</h2>
                         </a>
                         <a href="">
                             <i class="fa-solid fa-user-plus"></i>
                             <h2>Ajouter employee</h2>
                         </a><a href="">
                             <i class="fa-solid fa-circle-xmark"></i>
-                            <h2>Exist</h2>
+                            <h2>Exit</h2>
                         </a>
                     </div>
                
@@ -67,14 +70,14 @@
 
             <!--  END OF ASIDE  AND GO TO MAIN -->
             <main>
-                <h1>Dashnoard</h1>
+                <h1>Tableau de Bord</h1>
 
                 <div class="date">
                     <input type="date" name="" id="">
                 </div>
                 <div class="insights">
                     <div class="sales">
-                    <i class="fa-thin fa-chart-simple"></i>
+                    <i class="fa-solid fa-timeline"></i>
                     <div class="middle">
                         <div class="left">
                             <h3>Temps d'employee</h3>
@@ -93,7 +96,7 @@
                     </div>
                     <!-- END THE STAST'S ------>
                     <div class="expenses">
-                    <i class="fa-thin fa-chart-simple"></i>
+                    <i class="fa-solid fa-chalkboard-user"></i>
                     <div class="middle">
                         <div class="left">
                             <h3>Temps d'employee</h3>
@@ -112,7 +115,7 @@
                     </div>
                     <!-- END THE STAST'S ------>
                     <div class="income">
-                    <i class="fa-thin fa-chart-simple"></i>
+                    <i class="fa-solid fa-phone-missed"></i>
                     <div class="middle">
                         <div class="left">
                             <h3>Temps d'employee</h3>
@@ -132,8 +135,8 @@
                     <!-- END THE STAST'S ------>
 
                     <!-- END THE MAAIN-INS ------>
-
-                    <div class="recent-order">
+                </div>
+                <div class="recent-order">
                         <h2>Activité Recente</h2>
                         <table>
                             <thead>
@@ -146,6 +149,28 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                
+                            <tr>
+                                    <td>Chris le conquerant</td>
+                                    <td>225 07 69 36 28 51</td>
+                                    <td>Payement Validé</td>
+                                    <td class="warring">Administrateur</td>
+                                    <td class="primary">Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Chris le conquerant</td>
+                                    <td>225 07 69 36 28 51</td>
+                                    <td>Payement Validé</td>
+                                    <td class="warring">Administrateur</td>
+                                    <td class="primary">Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Chris le conquerant</td>
+                                    <td>225 07 69 36 28 51</td>
+                                    <td>Payement Validé</td>
+                                    <td class="warring">Administrateur</td>
+                                    <td class="primary">Details</td>
+                                </tr>
                                 <tr>
                                     <td>Chris le conquerant</td>
                                     <td>225 07 69 36 28 51</td>
@@ -157,11 +182,80 @@
                         </table>
                         <a href="">Click</a>
                     </div>
-
-                    
-                </div>
             </main>
-            
+
+            <!-- END OF MAIN -->
+
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></button>
+                    
+                   <div class="theme-toggler">
+                   <i class="fa-solid fa-sun active" ></i>
+                   <i class="fa-solid fa-moon"></i>
+                   </div>
+                   <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Chris Lorng</b></p>
+                        <small class="text-muted">Amind</small>
+                    </div>
+                        <div class="photo-profile">
+                            <img src="../images/person1.webp" alt="">
+                        </div>
+                   </div>
+                   </div>
+                    <!--- END RIGHT ----- -->
+                <div class="recent-update">
+                    <h2>Messages Recent</h2>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="photo-profile">
+                                <img src="../images/person3.jpg" alt="">
+                            </div>
+                            <div class="message">
+                                <p><b>Chris Lorng</b> Vous avez eu à 
+                            Modifier le  Status d'un Employee</p>
+                            <small class="text-muted">il y'a 2min </small>
+                            </div>
+                        </div>
+
+                        <div class="update">
+                            <div class="photo-profile">
+                                <img src="../images/person1.webp" alt="">
+                            </div>
+                            <div class="message">
+                                <p><b>Chris Lorng</b> Vous avez eu à 
+                            Modifier le  Status d'un Employee</p>
+                            <small class="text-muted">il y'a 2min </small>
+                            </div>
+                        </div>
+
+                        <div class="update">
+                            <div class="photo-profile">
+                                <img src="../images/person2.webp" alt="">
+                            </div>
+                            <div class="message">
+                                <p><b>Chris Lorng</b> Vous avez eu à 
+                            Modifier le  Status d'un Employee</p>
+                            <small class="text-muted">il y'a 2min </small>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!---  AJOUT PESON --->
+
+                    <div class="sales-analytics">
+                        <h2>Employee Ajouter Recemment</h2>
+                        <div class="item online">
+                                <div class="icon">
+                                    
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+           
         </div>
 </body>
 </html>

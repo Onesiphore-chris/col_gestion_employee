@@ -85,9 +85,16 @@ small{
     font-size: 0.75rem;
 }
 .photo-profile{
-    width:2.8rem ;
-    height: 2.8rem;
-    border-radius:50%;
+    width:2.9rem ;
+    height: 2.9rem;
+}
+
+.photo-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 .text-muted{
     color: var(--color-info-ligth);
@@ -294,4 +301,107 @@ main .insights .progress .number{
 main .insights small{
     margin-top: 1.3rem;
     display: block;
+}
+
+/* -------------------- ACTIVITER RRECENTT --------------------------*/
+
+main .recent-order{
+    margin-top: 2rem;
+}
+main .recent-order h2{
+    margin-bottom: 0.8rem;
+}
+main .recent-order table{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+main .recent-order table:hover{
+    box-shadow: none;
+}
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+main table tbody tr:last-child td{
+    border: none;
+}
+main .recent-order a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+/* -------------------- RIGTH --------------------------*/
+
+.right{
+    margin-top: 1.4rem;
+}
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+   
+}
+.right .top .button{
+    display: none;
+}
+.right .theme-toggler{
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+.right .theme-toggler i{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .theme-toggler i.active{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-1);
+}
+.right .top .profile{
+    text-align: right;
+    display: flex;
+    gap: 2rem;
+}
+/*--------   UPDATE RIGHT -----------*/
+
+.right .recent-update{
+    margin-top: 2rem;
+}
+.right .recent-update h2{
+    margin-bottom: 1rem;
+   text-align: center;
+}
+.right .recent-update .updates{
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    transition: all 300ms ease;
+}
+.right .recent-update .updates:hover{
+    box-shadow: none;
+}
+.right .recent-update .updates .update{
+    display: grid;
+    grid-template-columns: 4rem auto;
+    gap:2;
+    margin-bottom: 1rem;
 }
