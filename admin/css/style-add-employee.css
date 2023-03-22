@@ -233,90 +233,6 @@ main .date input[type="date"]{
     color: var(--color-dark);
 }
 
-main .insights{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-}
-main .insights > div{
-    background: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    margin-top: 1rem;
-    box-shadow: var(--box-shadow);
-}
-main .insights > div:hover{
-    box-shadow: none;
-}
-main .insights > div i{
-    background: #ff7792;
-    font-size: 2rem;
-    padding: 0.8rem;
-    border-radius: 50%;
-    color: var(--color-white);
-}
-main .insights > div.sales i{
-    background: #111e88;
-}
-main .insights > div.expenses i{
-    background: var(--color-danger);
-}
-main .insights > div.expenses i{
-    background: var(--color-success);
-}
-
-main .insights > div .middle{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-main .insights h3{
-    margin: 1rem  0.6rem;
-    font-size: 1.5rem;
-}
-main .insights .progress{
-    position: relative;
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-}
-main .insights svg{
-    width: 8rem;
-    height: 8rem;
-}
-main .insights svg circle{
-    fill: none;
-    stroke: var(--color-primary);
-    stroke-width: 16;
-    stroke-linecap: round;
-    transform: translate(5px , 5px );
-    stroke-dasharray: 110;
-    stroke-dashoffset: 92;
-}
-main .insights .sales svg circle{
-    stroke-dasharray: 200;
-    stroke-dashoffset: -20;
-}
-main .insights .expenses svg circle{
-    stroke-dasharray: 110;
-    stroke-dashoffset: 35;
-}
-main .insights .progress .number{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main .insights small{
-    margin-top: 1.3rem;
-    display: block;
-}
-
 /* -------------------- ACTIVITER RRECENTT --------------------------*/
 
 main .recent-order{
@@ -324,26 +240,55 @@ main .recent-order{
 }
 main .recent-order h2{
     margin-bottom: 0.8rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--color-dark);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin: 10px;
+   
 }
 main .recent-order table{
     background: var(--color-white);
     width: 100%;
-    border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     text-align: center;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
 }
-main #table-dashboard{
-    display: none;
-}
+
 main .recent-order table:hover{
     box-shadow: none;
 }
+main table  thead th{
+    font-size: 1.4rem;
+    
+}
 main table tbody td{
-    height: 2.8rem;
+    height: 4rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
+}
+main table tbody td i{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--color-white);
+}
+main table tbody td i:first-child{
+    background: #ffbb55;
+}
+main table tbody td i:last-child{
+    background: var(--color-primary);
+}
+main table tbody tr:nth-child(odd){
+    background-color: #eee;
 }
 main table tbody tr:last-child td{
     border: none;
@@ -354,6 +299,71 @@ main .recent-order a{
     margin: 1rem auto;
     color: var(--color-primary);
 }
+
+main .modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: var(--color-dark);
+}
+main form{
+    width: 50rem;
+    height: 40rem;
+    margin: 0 auto;
+}
+main form h1{
+    font-size: 3rem;
+    color: var(--color-white);
+}
+.segment{
+    text-align: center;
+}
+.segment a{
+    text-decoration: none;
+}
+
+main form button, input{
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: var(--border-radius-2);
+    padding:var(--padding-1);
+    background-color:var(--color-white);
+    text-shadow: 1px 1px 0 var(--color-white);
+    margin: 10px 0;
+}
+main form label {
+    display: block;
+    margin-bottom: var(--ruler)*1.5;
+    width: 100%;
+  }
+  main form  input{
+    margin-right: 10px;
+    box-shadow:  inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  
+  }
+  main form input:focus {
+    box-shadow:  inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+
+  main form  .unit {
+    border-radius: var(--border-radius-2);
+    line-height: 0;
+    width: 2rem;
+    height:2rem;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 10px;
+    font-size: 2rem;
+    
+  }
 
 /* -------------------- RIGTH --------------------------*/
 
@@ -424,61 +434,6 @@ main .recent-order a{
     margin-bottom: 1rem;
 }
 
-/* -------------- SALES ANALY =========*/
-
-.right .sales-analytics{
-    margin-top: 2rem;
-}
-
-.right .sales-analytics h2{
-    margin-bottom: 0.8rem;
-}
-.right .sales-analytics .item{
-    background: var(--color-white);
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 0.7rem;
-    padding: 1rem var(--card-padding);
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius-3);
-    transition: all 300ms ease;
-}
-.right .sales-analytics .item:hover{
-    display: none;
-}
-.right .sales-analytics .item .right{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    margin: 0;
-    width: 100%;
-}
-.right .sales-analytics .item .icon{
-    color: var(--color-white);
-    padding: 0.6rem;
-    border-radius: 50%;
-    display: flex;
-    background: var(--color-primary);
-}
-.right .sales-analytics .add-product{
-    background-color: transparent;
-    border: 2px dashed var(--color-primary);
-    color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.right .sales-analytics .add-product div{
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-.right .sales-analytics .add-product div h3{
-    font-weight: 600;
-}
-
-
 /*  MEDIA QUERY */
 
 @media screen and (max-width: 1200px) {
@@ -499,28 +454,7 @@ main .recent-order a{
         position: relative;
         margin-top: 1.8rem;
     }
-    main .insights{
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    main .recent-order{
-        width: 94%;
-        position: absolute;
-        left: 7%;
-        transform: translateX(-50px);
-        margin: 2rem  6.8rem;
-    }
-    main .recent-order table{
-        width: 83vw;
-    }
-    main table thead tr th:last-child, 
-    main table thead tr th:first-child{
-        display: none;
-    }
-    main table tbody tr td:last-child, 
-    main table tbody tr td:first-child{
-        display: none;
-    }
+    
 }
 @media screen and (max-width: 768px){
     .container{
@@ -576,10 +510,38 @@ main .recent-order a{
         margin: 3rem 0 0  0;
         width: 100%;
     }
-    main .recent-order table{
-        width: 100%;
-        margin: 0;
+    main .recent-order .tableau-responsive table, 
+    .tableau-responsive thead,
+    .tableau-responsive tbody,
+    .tableau-responsive tr,
+    .tableau-responsiveth, 
+    .tableau-responsivetd {
+        display: block;
     }
+    .tableau-responsive thead{
+        display: none;
+    }
+    .tableau-responsive td{
+        padding-left:150px;
+        position: relative;
+        background: var(--color-white);
+        margin-top: -1px;
+    }
+    .tableau-responsive td::before{
+        content: attr(data-label);
+        position: absolute;
+        top: 0; left: 0;
+        width: 130px;
+        bottom: 0;
+        color: var(--color-dark-variant);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .tableau-responsive tr{
+        margin-bottom: 1rem;
+    }
+    
     .right {
         width: 94%;
         margin: 0 auto 4rem;

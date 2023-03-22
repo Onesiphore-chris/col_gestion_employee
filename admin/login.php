@@ -1,3 +1,8 @@
+<?php
+      session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +16,18 @@
     <title>login_employee</title>
 </head>
 <body>
+          <?php
+                require_once '../config/config.php';
+
+                if($_POST['send']){
+
+                  echo 'ok';
+                }
+
+
+        ?>
+
+
     <form>
   
         <div class="segment">
@@ -18,12 +35,12 @@
         </div>
         
         <label>
-          <input type="text" placeholder="Email Address"/>
+          <input type="text" name="email" placeholder="Email Address"/>
         </label>
         <label>
-          <input type="password" placeholder="Password"/>
+          <input type="password" name="password" placeholder="Password"/>
         </label>
-        <button class="red" type="button"><i class="icon ion-md-lock"></i> Log in</button>
+        <button class="red" type="button" name="send"><i class="icon ion-md-lock"></i> Log in</button>
         
         <div class="segment">
           <a href="../index.php"><button class="unit" type="button"><i class="fa-solid fa-backward"></i></button></a>

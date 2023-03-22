@@ -19,31 +19,58 @@
 </head>
 <body>
 
-        <?php
+ <?php
 
-          include_once '../config/config.php';
-          
-          if(isset($_POST['send'])){
-        
-            if(isset($_POST['email']) && isset($_POST['password'])){
-                
-              $email = htmlspecialchars($_POST['email']);
-              $password = htmlspecialchars($_POST['password']);
+require_once '../config/config.php';
 
-              $req = $dbb->prepare("SELECT * FROM `gestion_employee` WHERE '$email' = email ");
-              $req->execute();
-               
-                  var_dump($req);
-                  die('ok');
-            }
+             if(isset($_POST['send']))
+          {
+
+         if(isset($_POST['email']) && isset($_POST['password'])){
+             
+             $email = htmlspecialchars($_POST['email']);
+             $password = htmlspecialchars($_POST['password']);
+         
+             $req = "SELECT * FROM `admin` email = '$email'  AND password = '$password' ";
             
-          }
+             $select = $dbb->prepare($req);
+             $select->execute();
+             var_dump($select);
+             die('jesus');
+             $data = $select->fetch(PDO::FETCH_ASSOC);
+             $row = $select->rowCount();
 
-        ?>
 
+
+             if($row == 
+              1){
+
+                 filter_var($email , FILTER_VALIDATE_EMAIL);
+                 if($data){
+
+                 $_SESSION['email'] = $email;
+                 header('location:dashboard.php');
+                 }
+                 else{
+                 $_error = 'veillez entrez un email valide ';
+                 }
+
+             
+             }else{
+             $_error = 'vous n'/'avez pas de compte';
+             }
+             
+         }else{
+             $_error = 'vous remplir vos champs !!!';
+         }
+         
+ }
+
+?>
+
+       
 
     <form action="" method="POST"  enctype="multipart/form-data">
-  
         <div class="segment">
           <h1>Sign up</h1>
         </div>

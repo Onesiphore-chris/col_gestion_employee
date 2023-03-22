@@ -57,7 +57,7 @@
                         <i class="fa-solid fa-wrench"></i>
                             <h2>Parametre</h2>
                         </a>
-                        <a href="">
+                        <a href="add-employee.php">
                             <i class="fa-solid fa-user-plus"></i>
                             <h2>Ajouter employee</h2>
                         </a><a href="">
@@ -69,7 +69,7 @@
             </aside>
 
             <!--  END OF ASIDE  AND GO TO MAIN -->
-            <main>
+            <main id="main-dashboard">
                 <h1 class="bord" >Tableau de Bord</h1>
 
                 <div class="date">
@@ -182,6 +182,7 @@
                         </table>
                         <a href="">Click</a>
                     </div>
+                    
             </main>
 
             <!-- END OF MAIN -->
