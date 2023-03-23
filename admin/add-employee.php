@@ -147,6 +147,8 @@
                         </table>
                         <div class="myModal" id="myModal">
 
+                        
+
                         <form action="add.php" method="POST">
                                     <div class="segment">
                                     <h1>ENREGISTREMENT</h1>
