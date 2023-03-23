@@ -5,13 +5,13 @@ let myBtn = document.getElementById("myBtn");
 
 
 myBtn.onclick = function(){
-    modal.style.display = "block";
+    myModal.style.display = "block";
 }
 
 
 window.onclick = function(event){
     if(event.target == modal){
-        modal.style.display = "none";
+        myModal.style.display = "none";
     }
 }
 

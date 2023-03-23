@@ -300,12 +300,13 @@ main .recent-order a{
     color: var(--color-primary);
 }
 
-main .modal{
-    display: none;
+main .myModal{
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
     background: var(--color-dark);
+    
 }
 main form{
     width: 50rem;
@@ -366,6 +367,7 @@ main form label {
   }
 
 /* -------------------- RIGTH --------------------------*/
+
 
 .right{
     margin-top: 1.4rem;

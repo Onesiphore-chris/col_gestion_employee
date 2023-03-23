@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,8 +145,9 @@
                                
                             </tbody>
                         </table>
-                        <div class="modal" id="myModal">
-                        <form action="" method="POST"  enctype="multipart/form-data">
+                        <div class="myModal" id="myModal">
+
+                        <form action="add.php" method="POST">
                                     <div class="segment">
                                     <h1>ENREGISTREMENT</h1>
                                     </div>
@@ -154,10 +161,10 @@
                                     <label>
                                     <input type="email" name="email" placeholder="Adresse Email"/>
                                     </label> <label>
-                                    <input type="email" name="email" placeholder="Departement"/>
+                                    <input type="email" name="departement" placeholder="Departement"/>
                                     </label>
                                     <label>
-                                    <input type="text" name="Numero" placeholder="Nmero"/>
+                                    <input type="text" name="numero" placeholder="Nmero"/>
                                     </label>
                                     <label>
                                     <input type="password" name="password" placeholder="Password"/>
@@ -165,9 +172,6 @@
                                     <button class="red" type="submit" name="send">Enregistrer</button>
                                     </form>
 
-                                    <div class="segment">
-                                    <a href="../index.php"><button class="unit" type="button"></button></a>
-                                    </div>
                              </div>
                              </div>
                     
